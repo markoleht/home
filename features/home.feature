@@ -4,15 +4,15 @@ As a user, I want to be able to navigate through out the website using the menu 
 
 Scenario Outline: Navigating through the main menu options from the home page
 
-Given the browser is at the "Home" page
-When the User clicks on the "<option>" menu option in the menu
-Then The title of the page should be "<title>"
+        Given the browser is at the "Home" page
+        When the User clicks on the "<option>" menu option in the menu
+        Then The title of the page should be "<title>"
 
 Examples:
 
-| option     | title |
-| home       | #home     |
-| about      | #about    |
-| skills     | #skills   |
-| portfolio  | #portfolio|
-| contact    | #contact  |
+        | MenuOption | MenuTitle |
+        | home       | #home     |
+        | about      | #about    |
+        | skills     | #skills   |
+        | portfolio  | #portfolio|
+        | contact    | #contact  |
