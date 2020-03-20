@@ -146,7 +146,7 @@ exports.config = {
         strict: false,      // <boolean> fail if there are any undefined or pending steps
         tagExpression: '',  // <string> (expression) only execute the features or scenarios with tags matching the expression
         timeout: 60000,     // <number> timeout for step definitions
-        ignoreUndefinedDefinitions: false, // <boolean> Enable this config to treat undefined definitions as warnings.
+        ignoreUndefinedDefinitions: true, // <boolean> Enable this config to treat undefined definitions as warnings.
     },
     
     //
@@ -181,8 +181,8 @@ exports.config = {
         configuration.setAppName("App tests");
         configuration.setTestName('AppliTools Sample: Login');
         configuration.setApiKey(process.env.APPLITOOLS_KEY);
+        
         eyes.setConfiguration(configuration);
-
         global.eyes = eyes;
         global.Target = Target;
     },
